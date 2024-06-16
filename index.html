@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" placeholder="0" id="value" />
+        <div class="box">
+            <button style="background-color: orange; color: white;" onclick="clearItem()">AC</button>
+            <button  style="background-color: orange; color: white;" onclick="deleteItem()">DEL</button>
+            <button  style="background-color: orange; color: white;" onclick="input('%')">%</button>
+            <button  style="background-color: orange; color: white;" onclick="input('/')">/</button>
+        </div>
+        <div class="box">
+            <button onclick="input('7')">7</button>
+            <button onclick="input('8')">8</button>
+            <button onclick="input('9')">9</button>
+            <button  style="background-color: orange; color: white;" onclick="input('*')">*</button>
+        </div>
+        <div class="box">
+            <button onclick="input('4')">4</button>
+            <button onclick="input('5')">5</button>
+            <button onclick="input('6')">6</button>
+            <button  style="background-color: orange; color: white;" onclick="input('-')">-</button>
+        </div>
+        <div class="box">
+            <button onclick="input('1')">1</button>
+            <button onclick="input('2')">2</button>
+            <button onclick="input('3')">3</button>
+            <button  style="background-color: orange; color: white;" onclick="input('+')">+</button>
+        </div>
+        <div class="box">
+            <button onclick="input('0')">0</button>
+            <button onclick="input('00')">00</button>
+            <button onclick="input('.')">.</button>
+            <button  style="background-color: orange; color: white;" onclick="output()">=</button>
+        </div>
+    </div>
+   <script src="script.js"></script>
+</body>
+
+</html>
